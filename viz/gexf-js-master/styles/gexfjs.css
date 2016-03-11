@@ -46,14 +46,19 @@ h1 a {
     width: 195px;
 }
 
+.h4-title {
+    margin-left:150px;
+    margin-top:15px;
+}
+
 #searchinput {
     background: #fff url(../img/search.gif) no-repeat right;
     border: 1px solid #DDD;
     font-size: 14px; line-height: 14px, height: 14px;
-    left: 250px;
+    right: 150px;
     padding: 1px 4px; margin: 0;
     position: absolute;
-    top: 10px;
+    top: 14px;
     width: 320px;
 }
 
@@ -244,10 +249,16 @@ a:hover {
 #autocomplete {
     position: absolute; display: none; padding: 0; margin: 0;
     border-style: none solid; border-color: #ccc; border-width: 1px;
+    top: 38px;
+    left: 250px;
+    display: block;
+
 }
 
 #autocomplete div {
-    border-bottom: 1px solid #ccc; padding: 0; margin: 0; float: left; clear: both; background: #fff;
+    border-bottom: 1px solid #ccc; padding: 0; margin: 0; float: left; clear: both; 
+    background: #fff;
+    background-color:rgba(255,255,255,0.7);
 }
 
 #autocomplete h4 {
@@ -263,7 +274,7 @@ a:hover {
 }
 
 #autocomplete li a {
-    display: block; width: 240px; height: 28px; background: #fff; color: #06a8de;
+    display: block; width: 240px; height: 28px; /*background: #fff;*/ color: #06a8de;
 }
 
 #autocomplete li.hover a {

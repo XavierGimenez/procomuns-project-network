@@ -41,9 +41,9 @@
 
         <h4>Metodology</h4>
         <p>The aim of the visualization is to highlight how projects are related to each other. In order to do that and since each project has tags assigned to it, connections between projects can be stablished looking at how many tags are shared within projects.</p>
-        <p>However, there are a lot of projects without assigned tags. To overcome this:
+        <p>However, actually the dataset contains a lot of projects without tags assigned. To overcome this:
             <ul>
-                <li>We can consider that projects that are tagged can provide an acceptable set of tags which can be reused through all the projects</li>
+                <li>We can consider that projects that are tagged can provide an acceptable set of tags which can be reused through all the projects.</li>
                 <li>For those projects without tags, look at its description and search for topics from the set of tags. If tag occurrences are found, these tags are linked to the project. </li>
                 <li>With almost all of the projects tagged, an new column is added on the dataset in order to
                     find connections between projects. Two projects are considered as connected when they share a minimum number of tags (3) between them.
@@ -98,6 +98,9 @@
             <div id="leftcontent"></div>
         </div>
         <div id="titlebar">
+            <div>
+              <h4 class="h4-title">Network of projects from the Commons-Based Peer Production directory</h4>
+            </div>
             <div id="maintitle">
                 <h1><a href="http://www.procomuns.net/" target="_blank" title="Made with Gephi for Procomuns">Gephi: JavaScript GEXF Viewer</a></h1>
             </div>
@@ -107,7 +110,7 @@
             </form>
             <div id="moreinfo">
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">About</button>
-            </info>
+            </div>
         </div>
         <ul id="autocomplete">
         </ul>
