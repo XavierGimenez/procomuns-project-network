@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Procomuns projects networks</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="styles/gexfjs.css" />
+        <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css" />
+        <!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script-->
+        <!--script type="text/javascript">
+        // Fallback in case JQuery CDN isn't available
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript type='text/javascript' src='js/jquery-1.7.2.min.js'%3E%3C/script%3E"));
+            }
+        </script-->
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="js/gexfjs.js"></script>
+        <script type="text/javascript" src="config.js"></script>
+        
+
+    </head>
+    <body>
+
+<!-- MODAL WINDOW -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">About</h4>
+      </div>
+      <div class="modal-body">
+        <p<This visualization has been developed in the context of Visualization and data contest on <a href='http://procomuns.net/en/' target='_blank'><i>Commons Collaborative Economies: Policies, Technologies and City for the People</i></a>, an encounter which aims to highlight the relevance of the commons-oriented approach of peer production and collaborative economy, while proposing public policies and providing technical guidelines to build software platforms for collaborative communities.<p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div><!-- MODAL WINDOW -->
+
+        <div id="zonecentre" class="gradient">
+            <canvas id="carte" width="0" height="0"></canvas>
+            <ul id="ctlzoom">
+                <li>
+                    <a href="#" id="zoomPlusButton" title="S'approcher"> </a>
+                </li>
+                <li id="zoomSliderzone">
+                    <div id="zoomSlider"></div>
+                </li>
+                <li>
+                    <a href="#" id="zoomMinusButton" title="S'éloigner"> </a>
+                </li>
+                <li>
+                    <a href="#" id="lensButton"> </a>
+                </li>
+                <li>
+                    <a href="#" id="edgesButton"> </a>
+                </li>
+            </ul>
+        </div>
+        <div id="overviewzone" class="gradient">
+            <canvas id="overview" width="0" height="0"></canvas>
+        </div>
+        <div id="leftcolumn">
+            <div id="unfold">
+                <a href="#" id="aUnfold" class="rightarrow"> </a>
+            </div>
+            <div id="leftcontent"></div>
+        </div>
+        <div id="titlebar">
+            <div id="maintitle">
+                <h1><a href="http://www.procomuns.net/" target="_blank" title="Made with Gephi for Procomuns">Gephi: JavaScript GEXF Viewer</a></h1>
+            </div>
+            <form id="recherche">
+                <input id="searchinput" class="grey" autocomplete="off" />
+                <input id="searchsubmit" type="submit" />
+            </form>
+            <div id="moreinfo">
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">About</button>
+            </info>
+        </div>
+        <ul id="autocomplete">
+        </ul>
+    </body>
+</html>
